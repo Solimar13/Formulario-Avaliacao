@@ -60,16 +60,16 @@
           <div class="input-name">
             <div class="input-wrapper">
               <label for="name">Nome</label>
-              <input type="text" id="name">
+              <input type="text" id="name" required>
             </div>
             <div class="input-wrapper">
               <label for="lastname">Sobrenome</label>
-              <input type="text" id="lastname">
+              <input type="text" id="lastname" required>
             </div>
           </div>
           <div class="input-wrapper">
             <label for="email">Email <span>(digite um email válido)</span></label>
-            <input type="email" id="email">
+            <input type="email" id="email" required>
           </div>
         </fieldset>
         <fieldset>
@@ -87,7 +87,29 @@
             <label for="feedback">Feedback sobre o mentor</label>
             <textarea id="feedback"></textarea>
           </div>
+          <div class="input-checkbox">
+            <input type="checkbox" id="doubts">
+            <label for="doubts">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+          </div>
         </fieldset>
+        <fieldset>
+          <legend>Agendando próxima mentoria</legend>
+          <div class="input-date">
+            <div class="input-wrapper">
+              <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+              <input type="date" id="date">
+            </div>
+            <div class="input-wrapper">
+              <label for="begin">Das</label>
+              <input type="time" id="begin">
+            </div>
+            <div class="input-wrapper">
+              <label for="end">Até</label>
+              <input type="time" id="end">
+            </div>
+          </div>
+        </fieldset>
+        <input type="submit" value="Salvar" class="button">
       </form>
     </div>
   </body>
